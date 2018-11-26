@@ -11,9 +11,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 @ExtendWith(MockitoExtension.class)
-@DisplayName("Spring boot 2 mockito2 Junit5 example")
+@DisplayName("A example to test showservice with mock strategy")
 public class ShowServiceTests {
 	private static final String MOCK_OUTPUT = "Mocked show label";
 

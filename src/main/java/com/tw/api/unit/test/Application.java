@@ -22,6 +22,7 @@ public class Application {
 
 
 	@Bean
+	@Profile("local")
 	public CommandLineRunner setup(TodoRepository toDoRepository) {
 		return (args) -> {
 			toDoRepository.add(new Todo("Remove unused imports", true));

@@ -1,5 +1,6 @@
 package com.tw.api.unit.test.domain.todo;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashSet;
@@ -8,10 +9,10 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Repository
+@Component
 public class TodoRepository {
 
-    private Set<Todo> todos = new HashSet<>();
+    private Set<Todo> todos;
 
     public TodoRepository() {
         this.todos = new HashSet<>();
